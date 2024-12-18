@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #5a67d8;
+    --secondary-color: #4c51bf;
+    --accent-color: #63b3ed;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main layout */
+.main-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Weather panel on the left */
+.weather-panel {
+    width: 30%; /* Takes 30% of screen */
+    background-image: linear-gradient(
+        325deg,
+        #a8dadc 0%,      /* Subtle teal */
+        #457b9d 50%,     /* Muted blue */
+        #1d3557 100%     /* Deep navy */
+    );
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.weather-panel h1 {
+    margin-bottom: 20px;
+    color: white; /* Ensure header text is visible on gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for better readability */
+}
+
+.weather-panel input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.weather-panel button {
+    padding: 10px;
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather-panel button:hover {
+    background-color: #005bb5;
+}
+
+.weather-details {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white; /* Set text color to white for visibility */
+}
+
+#temp-details {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#weather-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-details p {
+    margin-bottom: 5px;
+}
+
+/* Map container on the right */
+#map-container {
+    width: 70%;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}

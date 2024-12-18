@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Map App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="weather.css" />
+</head>
+<body>
+    <div class="main-container">
+        <!-- Weather Section -->
+        <section class="weather-panel">
+            <h1>Weather Info</h1>
+            <input id="city-input" type="text" placeholder="Enter City Name" />
+            <button id="get-weather-btn">Get Weather</button>
+            <div class="weather-details">
+                <p id="current-date"></p>
+                <h2 id="city-name">City Name</h2>
+                <div id="temp-details">
+                    <span id="temperature"></span>
+                    <span id="weather-icon"></span>
+                </div>
+                <p id="weather-description"></p>
+                <p>Max Temp: <span id="max-temp"></span></p>
+                <p>Min Temp: <span id="min-temp"></span></p>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map-container">
+            <div id="map"></div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
